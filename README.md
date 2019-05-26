@@ -8,17 +8,17 @@ This list contains setup for all the essential languages and tools for developme
 * [Terminals](#terminals)
 * [Homebrew](#homebrew)
 * [Git](#git)
-* [Docker](#docker)
+* [Vim](#vim)
 
 ## System Preferences
 
 There are a couple of tweaks I like to make to the System Preferences that are especially helpful for development. Feel free to follow these, or to ignore them, depending on your personal preferences.
 
-In Apple Icon > System Preferences:
+In **Apple Icon > System Preferences**:
 
-Trackpad > Tap to click
-Keyboard > Key Repeat > Fast (all the way to the right)
-Keyboard > Delay Until Repeat > Short (all the way to the right)
+* Trackpad > Tap to click
+* Keyboard > Key Repeat > Fast (all the way to the right)
+* Keyboard > Delay Until Repeat > Short (all the way to the right)
 
 ## Terminals
 
@@ -74,4 +74,50 @@ macOS comes with a system version of Git, but I always prefer to install my own 
 brew install git
 ```
 
-## Docker 
+Check that git is installed in `/usr/local/bin/git`:
+
+```
+which git 
+```
+
+### Configuration 
+
+Download the [.gitconfig](https://raw.githubusercontent.com/nicolashery/mac-dev-setup/master/.gitconfig) file to your home directory:
+
+```
+cd ~
+curl -O https://raw.githubusercontent.com/mrobillard/macos-setup/master/.gitconfig
+```
+
+Set up Git user (this will update your .gitconfig):
+
+```
+git config --global user.name "Your Name Here"
+git config --global user.email "your_email@youremail.com"
+```
+
+Update the .gitignore file to ignore `.DS_Store` (a hidden macOS system file that's put in folders).
+
+```
+cd ~
+curl -O https://raw.githubusercontent.com/mrobillard/macos-setup/master/.gitignore
+git config --global core.excludesfile ~/.gitignore
+```
+
+## Vim  
+
+I use two basic Vim configurations. 
+
+1. From my personal dotfiles my .vim setup, which is a little more heavily configured.
+
+```
+
+```
+
+2. If I need something simple with some basic ammenities, [tpope](https://github.com/tpope/vim-sensible) created a sensible list of defaults. 
+
+```
+mkdir -p ~/.vim/pack/tpope/start
+cd ~/.vim/pack/tpope/start
+git clone https://tpope.io/vim/sensible.git
+```
