@@ -9,6 +9,7 @@ This list contains setup for all the essential languages and tools for developme
 * [Homebrew](#homebrew)
 * [Git](#git)
 * [Vim](#vim)
+* [Python](#python)
 
 ## System Preferences
 
@@ -82,7 +83,7 @@ which git
 
 ### Configuration 
 
-Download the [.gitconfig](https://raw.githubusercontent.com/nicolashery/mac-dev-setup/master/.gitconfig) file to your home directory:
+Download the [.gitconfig](https://raw.githubusercontent.com/mrobillard/macos-setup/master/.gitconfig) file to your home directory:
 
 ```
 cd ~
@@ -106,7 +107,7 @@ git config --global core.excludesfile ~/.gitignore
 
 ## Vim  
 
-I use two basic Vim configurations. 
+I use two different Vim configurations. 
 
 1. From my personal dotfiles my .vim setup, which is a little more heavily configured.
 
@@ -121,3 +122,60 @@ mkdir -p ~/.vim/pack/tpope/start
 cd ~/.vim/pack/tpope/start
 git clone https://tpope.io/vim/sensible.git
 ```
+
+## Python 
+
+macOS ships with a system version of Python, but I always install my own versions alongside of it to avoid messing with the system install that other applications rely on. 
+
+Install `pyenv` with Homebrew:
+
+```
+brew install pyenv
+```
+
+After `pyenv` is installed, you should see instructions to add the following to your `.bash_profile` or `.zshrc`.
+
+```
+if command -v pyenv 1>/dev/null 2>&1; then eval "$(pyenv init -)"; fi
+```
+
+Install the following dependencies:
+
+```
+brew install openssl readline sqlite3 xz zlib
+
+```
+
+Install the most recent versions of Python2 and Python3. 
+
+```
+pyenv install --list
+pyenv install 3.x.x
+pyenv install 2.x.x
+```
+
+Confirm that you have the desired versions installed and that the default version (marked with a `*`) is the system version. 
+
+```
+pyenv versions
+```
+
+### Using Pyenv
+
+To switch the shell version of Python, run:
+
+```
+pyenv shell 3.x.x
+```
+
+To set a local directory to your desired version of Python, run:
+
+```
+pyenv local 3.x.x
+```
+
+This will save the desired version in a `.python-version` file. Next time you enter the project's directory from a terminal, `pyenv` will automatically load that version for you.
+
+### Anaconda 
+
+
