@@ -10,6 +10,7 @@ This list contains setup for all the essential languages and tools for developme
 * [Git](#git)
 * [Vim](#vim)
 * [Python](#python)
+* [Node.js](#node.js)
 
 ## System Preferences
 
@@ -178,4 +179,45 @@ This will save the desired version in a `.python-version` file. Next time you en
 
 ### Anaconda 
 
+The Anaconda/Miniconda distributions of Python come with many useful tools for scientific computing. For numerical and scientific computing, I prefer to use this distribution because its standard across the community. 
 
+```
+pyenv install miniconda3-x.x.x
+```
+
+Or
+
+```
+pyenv install anaconda3-x.x.x
+```
+
+After loading an Anaconda or Miniconda Python distribution into your shell, you can create conda environments (which are similar to virtualenvs):
+
+```
+pyenv shell miniconda3-x.x.x
+conda create --name  mycondaproject
+conda activate mycondaproject
+```
+
+I typically create two default environments for Py2 and Py3. 
+
+Install the Jupyter Notebook (and any other packages), using:
+
+```
+conda install jupyter
+```
+
+Check that Jupyter installed properly:
+
+```
+jupyter notebook
+```
+
+Deactivate the environment, and return to the default Python version with:
+
+```
+conda deactivate
+pyenv shell --unset
+```
+
+## Node.js 
