@@ -2,7 +2,7 @@
 
 My personal preferences for setting up a new macOS machine. 
 
-This list contains setup for all the essential languages and tools for development.  
+This list contains setup for all the essential languages and tools for development.
 
 * [System Preferences](#system-preferences)
 * [Terminals](#terminals)
@@ -11,6 +11,11 @@ This list contains setup for all the essential languages and tools for developme
 * [Vim](#vim)
 * [Python](#python)
 * [Node.js](#node.js)
+* [Ruby](#ruby)
+* [Heroku](#heroku)
+* [PostgresSQL](#postgressql)
+* [Redis](#redis)
+* [Elastic Search](#elasticsearch)
 
 ## System Preferences
 
@@ -221,3 +226,121 @@ pyenv shell --unset
 ```
 
 ## Node.js 
+
+The recommended way to install [Node.js](https://nodejs.org) is to use [nvm](https://github.com/nvm-sh/nvm) (Node Version Manager) which allows you to manage multiple versions of Node.js on the same machine.
+
+Install nvm by copy-pasting the [install script command](https://github.com/nvm-sh/nvm#install--update-script) into your terminal.
+
+Once that is done, open a new terminal and verify that it was installed correctly by running:
+
+```
+command -v nvm
+```
+
+View the all available stable versions of Node with:
+
+
+```
+nvm ls-remote --lts
+```
+
+Install the latest stable version with:
+
+
+```
+nvm install node
+```
+
+### npm
+
+By default, installing Node also installs the package manager, npm.
+
+## Ruby 
+
+Ruby comes installed on Unix systems, but we don't want to run the risk of interfering with the system version. 
+
+### Install 
+
+The recommended way to install Ruby is to use rbenv, which allows you to manage multiple versions of Ruby on the same machine. You can install rbenv with Homebrew:
+
+```
+brew install rbenv
+```
+
+Add it to your `.zshrc` or `.bash_profile` and source the file:
+
+```
+eval "$(rbenv init -)"
+```
+
+## Heroku 
+
+Make sure you have a [Heroku](https://www.heroku.com/) account. 
+
+### Install CLI 
+
+```
+brew tap heroku/brew
+brew install heroku
+```
+
+Login to your account:
+
+```
+heroku login 
+```
+
+## PostgresSQL
+
+Install using Homebrew:
+
+```
+brew install postgresql
+```
+
+It will automatically add itself to Homebrew Services. Start it with:
+
+
+```
+brew services start postgresql
+```
+
+### GUI
+
+My current favorite client is [TablePlus](https://tableplus.com/)
+
+## Redis 
+
+To install [Redis](https://redis.io/), use Homebrew:
+
+```
+brew install redis
+```
+
+Start it through Homebrew Services with:
+
+```
+brew services start redis 
+```
+
+## Elastic Search 
+
+### Install 
+
+Elastic Search runs on Java, so make sure Java is installed:
+
+```
+java -version
+```
+
+If Java is not installed, use Homebrew to install Java8:
+
+```
+brew cask install homebrew/cask-versions/java8
+```
+
+Next, install ES with Homebrew:
+
+```
+brew install elasticsearch
+```
