@@ -12,6 +12,7 @@ This list contains setup for all the essential languages and tools for developme
 * [Python](#python)
 * [Node.js](#node.js)
 * [Ruby](#ruby)
+* [AWS](#aws)
 * [Heroku](#heroku)
 * [PostgresSQL](#postgressql)
 * [Redis](#redis)
@@ -271,6 +272,30 @@ Add it to your `.zshrc` or `.bash_profile` and source the file:
 
 ```
 eval "$(rbenv init -)"
+```
+
+## AWS
+
+If you don't already, create an [AWS](https://aws.amazon.com/account/) account.
+
+### CLI 
+
+My preffered method is to install using pip3. You can also use cURL (instructions [here](https://docs.aws.amazon.com/cli/latest/userguide/install-macos.html)).
+
+```
+pip3 install awscli --upgrade --user
+```
+
+Verify that it was installed correctly: 
+
+```
+aws --version
+```
+
+Add an export command to the top of your shell's profile script and source the file:
+
+```
+export PATH=~/.local/bin:$PATH
 ```
 
 ## Heroku 
