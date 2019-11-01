@@ -1,0 +1,24 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"ayu",
+		"DocBlockr",
+		"Emmet",
+		"Git",
+		"GitGutter",
+		"MarkdownPreview",
+		"Material Monokai",
+		"Material Theme",
+		"Package Control",
+		"Sass",
+		"SublimeREPL",
+		"Terminal",
+		"Theme - Monokai Pro",
+		"WrapAsYouType"
+	]
+}

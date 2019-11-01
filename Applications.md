@@ -13,7 +13,21 @@ A list of applications that I regularly use for engineering / development. These
 
 ### Sublime Text
 
-Sublime Text 3 can be downloaded [here](https://www.sublimetext.com/3). Package Control can be installed by following these 
+Sublime Text 3 can be downloaded [here](https://www.sublimetext.com/3). Package Control can be installed by following these [instructions](https://packagecontrol.io/installation).
+
+#### Settings
+
+To replace the settings (provided in the root of this repository), replace the file at this path:
+
+```
+~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+```
+
+and this path:
+
+```
+~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+```
 
 #### Themes
 
