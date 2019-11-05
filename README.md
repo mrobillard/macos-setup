@@ -11,6 +11,7 @@ This list contains setup for all the essential languages and tools for developme
 * [Vim](#vim)
 * [Python](#python)
 * [Node.js](#node.js)
+* [Golang] (#golang)
 * [Ruby](#ruby)
 * [AWS](#aws)
 * [Heroku](#heroku)
@@ -255,6 +256,37 @@ nvm install node
 ### npm
 
 By default, installing Node also installs the package manager, npm.
+
+## Golang 
+
+Install Golang with brew:
+
+```
+brew install golang
+```
+
+### Setting up the Workspace 
+
+Go has a different approach for managing code, so you'll need to set up a workspace. Add the following lines to your `.zshrc` (or `.bashrc`):
+
+```
+export GOPATH=$HOME/development/go-workspace # don't forget to change your path correctly!
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+```
+
+To create your workspace, create the following directories:
+
+```
+mkdir -p $GOPATH $GOPATH/src $GOPATH/pkg $GOPATH/bin
+```
+
+Your workspace structure should look as follows:
+
+`$GOPATH/src` : Where your Go projects / programs are located
+`$GOPATH/pkg` : Contains all package objects
+`$GOPATH/bin` : The home for compiled binaries 
 
 ## Ruby 
 
