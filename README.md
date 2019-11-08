@@ -18,6 +18,7 @@ This list contains setup for all the essential languages and tools for developme
 * [PostgresSQL](#postgressql)
 * [Redis](#redis)
 * [Elastic Search](#elasticsearch)
+* [LaTeX](#latex)
 
 ## System Preferences
 
@@ -362,6 +363,10 @@ It will automatically add itself to Homebrew Services. Start it with:
 brew services start postgresql
 ```
 
+### pgAdmin
+
+pdAdmin is an administration and development platform for PostgresSQL and can be downloaded [here](https://www.pgadmin.org/download/).
+
 ### GUI
 
 My current favorite client is [TablePlus](https://tableplus.com/)
@@ -401,3 +406,17 @@ Next, install ES with Homebrew:
 ```
 brew install elasticsearch
 ```
+
+## LaTeX
+
+There are two options to install LaTeX on macOS:
+
+1. Install MacTeX with builtin editor(TexLive) - (2GB)
+2. Install BasicTeX only (100MB) + your personal LaTeX editor
+
+To install MacTex, as I typically do, download [here](http://www.tug.org/mactex/downloading.html).
+
+### LaTeX
+
+My editor of choice is [Texpad](https://www.texpad.com/).
+
