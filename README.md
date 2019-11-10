@@ -11,8 +11,10 @@ This list contains setup for all the essential languages and tools for developme
 * [Vim](#vim)
 * [Python](#python)
 * [Node.js](#node.js)
-* [Golang] (#golang)
+* [Go] (#golang)
 * [Ruby](#ruby)
+* [Julia](#julia)
+* [Rust](#rust)
 * [AWS](#aws)
 * [Heroku](#heroku)
 * [PostgresSQL](#postgressql)
@@ -258,7 +260,7 @@ nvm install node
 
 By default, installing Node also installs the package manager, npm.
 
-## Golang 
+## Go
 
 Install Golang with brew:
 
@@ -305,6 +307,53 @@ Add it to your `.zshrc` or `.bash_profile` and source the file:
 
 ```
 eval "$(rbenv init -)"
+```
+
+## Julia 
+
+Download the most current stable release from [here](https://julialang.org/downloads/) and install.
+
+To call Julia from the command line, it needs to be accessible via your path. My preffered method is to symlink the binary to `/usr/local/bin` which is already in your `PATH` (update the version number appropriately):
+
+```
+ln -fs "/Applications/Julia-1.2.app/Contents/Resources/julia/bin/julia" /usr/local/bin/julia
+```
+
+Or you can add the application to your `PATH` directly:
+
+```
+PATH="/Applications/Julia-1.2.app/Contents/Resources/julia/bin/:${PATH}"
+export PATH
+```
+
+## Rust 
+
+Download and install the installation script:
+
+```
+curl https://sh.rustup.rs -sSf | sh
+```
+
+To configure your currnet shell, add Rust to your system path (_Note: This will be done automatically next time you login to a new shell_):
+
+```
+source $HOME/.cargo/env
+```
+
+To check that everything was installed correctly, run:
+
+```
+rustc --version
+```
+
+You should see output in the following format: `rustc x.y.z (abcabcabc yyyy-mm-dd)`
+
+### Updating
+
+To update Rust, run:
+
+```
+rustup update
 ```
 
 ## AWS
