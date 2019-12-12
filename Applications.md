@@ -51,6 +51,10 @@ VS Code can be downloaded [here](https://code.visualstudio.com/download).
 
 Notion is an all-in-one workspace. Notion can be downloaded [here](https://www.notion.so/).
 
+## 1Password
+
+My favorite password manager. 1Password can be downloaded [here](https://1password.com/).
+
 ## Sketch 
 
 My prefferd UI design tool is Sketch. Download [here](https://www.sketch.com/).

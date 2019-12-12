@@ -11,13 +11,16 @@ This list contains setup for all the essential languages and tools for developme
 * [Vim](#vim)
 * [Python](#python)
 * [Node.js](#node.js)
-* [Go] (#golang)
+* [Go](#go)
 * [Ruby](#ruby)
+* [Java](#java)
 * [Julia](#julia)
 * [Rust](#rust)
+* [Docker](#docker)
 * [AWS](#aws)
 * [Heroku](#heroku)
 * [PostgresSQL](#postgressql)
+* [MongoDB](#mongodb)
 * [Redis](#redis)
 * [Elastic Search](#elasticsearch)
 * [LaTeX](#latex)
@@ -120,11 +123,7 @@ git config --global core.excludesfile ~/.gitignore
 
 I use two different Vim configurations. 
 
-1. From my personal dotfiles my .vim setup, which is a little more heavily configured.
-
-```
-
-```
+1. From my personal [dotfiles](https://github.com/mrobillard/dotfiles), my .vim setup, which is a little more heavily configured.
 
 2. If I need something simple with some basic ammenities, [tpope](https://github.com/tpope/vim-sensible) created a sensible list of defaults. 
 
@@ -309,6 +308,14 @@ Add it to your `.zshrc` or `.bash_profile` and source the file:
 eval "$(rbenv init -)"
 ```
 
+## Java 
+
+To install the latest version of Java, use:
+
+```
+brew install homebrew/cask/java 
+```
+
 ## Julia 
 
 Download the most current stable release from [here](https://julialang.org/downloads/) and install.
@@ -354,6 +361,18 @@ To update Rust, run:
 
 ```
 rustup update
+```
+
+## Docker 
+
+Download the latest stable version of Docker for macOS [here](https://download.docker.com/mac/stable/Docker.dmg). After the application is installed, you'll be able to sign in to your Docker account. 
+
+To check that everything was installed correctly, run the following:
+
+```
+docker version
+docker-compose version
+docker-machine version
 ```
 
 ## AWS
@@ -407,7 +426,6 @@ brew install postgresql
 
 It will automatically add itself to Homebrew Services. Start it with:
 
-
 ```
 brew services start postgresql
 ```
@@ -419,6 +437,21 @@ pdAdmin is an administration and development platform for PostgresSQL and can be
 ### GUI
 
 My current favorite client is [TablePlus](https://tableplus.com/)
+
+## MongoDB
+
+Install using Homebrew:
+
+```
+brew install mongodb
+```
+
+Create a data directory for databases and make sure it's accessible:
+
+```
+mkdir -p /data/db
+sudo chown -R `id -un` /data/db
+```
 
 ## Redis 
 
@@ -441,19 +474,20 @@ brew services start redis
 Elastic Search runs on Java, so make sure Java is installed:
 
 ```
-java -version
+java --version
 ```
 
-If Java is not installed, use Homebrew to install Java8:
+If Java is not installed, use Homebrew to install Java8 (ElasticSearch _needs_ Java8):
 
 ```
-brew cask install homebrew/cask-versions/java8
+brew cask install adoptopenjdk/openjdk/adoptopenjdk8
 ```
 
 Next, install ES with Homebrew:
 
 ```
-brew install elasticsearch
+brew tap elastic/tap
+brew install elastic/tap/elasticsearch-full
 ```
 
 ## LaTeX
