@@ -55,6 +55,8 @@ Notion is an all-in-one workspace. Notion can be downloaded [here](https://www.n
 
 My favorite password manager. 1Password can be downloaded [here](https://1password.com/).
 
+I also install the CLI utility [here](https://support.1password.com/command-line-getting-started/).
+
 ## Sketch 
 
 My prefferd UI design tool is Sketch. Download [here](https://www.sketch.com/).
