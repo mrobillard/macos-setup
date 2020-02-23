@@ -15,6 +15,12 @@ A list of applications that I regularly use for engineering / development. These
 
 Sublime Text 3 can be downloaded [here](https://www.sublimetext.com/3). Package Control can be installed by following these [instructions](https://packagecontrol.io/installation).
 
+To create a symlink for opening Sublime Text on the CLI:
+
+```
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
+```
+
 #### Settings
 
 To replace the settings (provided in the root of this repository), replace the file at this path:
@@ -37,6 +43,9 @@ My current favorite theme is [Monokai Pro](https://packagecontrol.io/packages/Th
 
 VS Code can be downloaded [here](https://code.visualstudio.com/download).
 
+To create a CLI command for VSCode, open up the Command Palette (⌘ + P), type `shell command` and select
+`Install 'code' command in PATH` from the options. 
+
 #### Extensions
 
 * Docker 
@@ -46,6 +55,22 @@ VS Code can be downloaded [here](https://code.visualstudio.com/download).
 * exports autocomplete
 * npm Intellisense 
 * React Food Truck 
+* vscode-styled-components
+* vscode-icons
+* Simple React Snippets
+* React Pure To Class
+* Python 
+* Prettier 
+* Live Server
+* JavaScript ES6
+* exports autocomplete
+* ES7 React/Redux/GraphQL/React-Native snippets
+* EditorConfig for VS Code
+* DotENV
+* css2react
+* CSS Peek
+* Bracket Pair Colorizer
+* Autoprefixer 
 
 ## Notion 
 
