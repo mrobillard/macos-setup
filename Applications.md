@@ -4,10 +4,16 @@ A list of applications that I regularly use for engineering / development. These
 
 * [Code Editors](#code-editors)
 * [Notion](#notion)
+* [1Password](#1password)
 * [Sketch](#sketch)
+* [Figma](#figma)
 * [Postman](#postman)
 * [OmniGraffle](#omnigraffle)
 * [Dash](#dash)
+* [CommandE](#commande)
+* [Alfred](#alfred)
+* [Sip](#sip)
+* [Superhuman](#superhuman)
 
 ## Code Editors
 
@@ -29,7 +35,7 @@ To replace the settings (provided in the root of this repository), replace the f
 ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
 ```
 
-and this path:
+and the files at this path:
 
 ```
 ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
@@ -86,6 +92,10 @@ I also install the CLI utility [here](https://support.1password.com/command-line
 
 My prefferd UI design tool is Sketch. Download [here](https://www.sketch.com/).
 
+## Figma
+
+In addition to Sketch, I've been using Figma more and more. Create and account and download [here](https://www.figma.com/downloads/).
+
 ## Postman 
 
 Postman is an API client and collaboration platform. Download [here](https://www.getpostman.com/). 
@@ -97,3 +107,19 @@ Diagramming and digital illustration tool. Download [here](https://www.omnigroup
 ## Dash 
 
 Subscription-based password management. Download [here](https://www.dashlane.com/).
+
+## CommandE
+
+CommandE is an instant cloud search tool that functions like Spotlight. It integrates with a number of cloud-based applications (Slack, Google, Notion, LinkedIn, Dropbox, etc) and provides an quick way to search and instantly open files and pages. Download [here](https://getcommande.com/).
+
+## Alfred
+
+A productivity app that supplements/replaces MacOS's Spotlight and provides a number of other features and integrations. Download [here](https://www.alfredapp.com/).
+
+## Sip 
+
+Sip is a (much) better color picker for MacOS. Download [here](https://sipapp.io/).
+
+## Superhuman
+
+Superhuman is a remarkably fast email client. Signup / Download [here](https://superhuman.com).

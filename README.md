@@ -24,6 +24,7 @@ This list contains setup for all the essential languages and tools for developme
 * [Redis](#redis)
 * [Elastic Search](#elasticsearch)
 * [LaTeX](#latex)
+* [Applications](#applications)
 
 ## System Preferences
 
@@ -49,7 +50,7 @@ The lastest release of Hyper can be found [here](https://hyper.is/#installation)
 
 ## Homebrew
 
-Homebrew is the standard package manger for macOS. 
+Homebrew is the defacto package manger for macOS. 
 
 ### XCode Developer Tools 
 
@@ -80,6 +81,10 @@ Homebrew Services is an extension of Homebrew that launches services (i.e. datab
 ```
 brew services start <formula>
 ```
+
+### Homebrew Packages
+
+Here is a collection of [Homebrew packages](BrewPackages.md) I use frequently. 
 
 ## Git 
 
@@ -117,6 +122,14 @@ Update the .gitignore file to ignore `.DS_Store` (a hidden macOS system file tha
 cd ~
 curl -O https://raw.githubusercontent.com/mrobillard/macos-setup/master/.gitignore
 git config --global core.excludesfile ~/.gitignore
+```
+
+### Github CLI 
+
+Github offers a CLI tool that brings Github functionality to the terminal:
+
+```
+brew install gh
 ```
 
 ## Vim  
@@ -503,3 +516,6 @@ To install MacTex, as I typically do, download [here](http://www.tug.org/mactex/
 
 My editor of choice is [Texpad](https://www.texpad.com/).
 
+## Applications
+
+Here is a short list of [applications](Applications.md) I use frequently. 
