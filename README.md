@@ -22,6 +22,7 @@ This list contains setup for all the essential languages and tools for developme
 * [PostgresSQL](#postgressql)
 * [MongoDB](#mongodb)
 * [Redis](#redis)
+* [ngrok](#ngrok)
 * [Elastic Search](#elasticsearch)
 * [LaTeX](#latex)
 * [Applications](#applications)
@@ -479,6 +480,14 @@ Start it through Homebrew Services with:
 ```
 brew services start redis 
 ```
+
+## ngrok 
+
+ngrok is a tool that allows you to create secure tunnels to localhost. With a single command, you can create a secure URL to your localhost server through any NAT or firewall. 
+
+<br/>
+
+Download and create an account [here](https://ngrok.com/download).
 
 ## Elastic Search 
 

@@ -133,7 +133,7 @@ A simple program that moves files or folders to the trash.
 brew install trash
 ```
 
-### archery
+### archey
 
 Displays your system information inside the terminal.
 
